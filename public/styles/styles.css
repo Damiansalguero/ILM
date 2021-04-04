@@ -20,6 +20,18 @@
   width: 100px !important;
 }
 
+#btn-service {
+  background-color: transparent;
+  border: 3px solid #fff;
+  color: #fff;
+}
+
+#btn-service:hover {
+  background-color: #000;
+  border: 3px solid #000;
+  color: none;
+}
+
 /*******PERSONAL STYLES**********/
 
 :root {
