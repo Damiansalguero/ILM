@@ -10,6 +10,18 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+/*******PERSONAL STYLES**********/
+.icon-service {
+  background: #000 !important;
+  padding: 20px !important;
+  border-radius: 50% !important;
+  height: 100px !important;
+  width: 100px !important;
+}
+
+/*******PERSONAL STYLES**********/
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -416,7 +428,7 @@ h3,
 
 h4,
 .h4 {
-  font-size: 1.5rem;
+  font-size: 20px;
 }
 
 h5,
@@ -10407,7 +10419,7 @@ html {
 hr.divider {
   max-width: 3.25rem;
   border-width: 0.2rem;
-  border-color: #f4623a;
+  border-color: #f67d00;
 }
 
 hr.light {
@@ -10616,20 +10628,4 @@ header.masthead h1 {
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
-}
-
-/*******PERSONAL STYLES**********/
-
-.carousel-caption {
-  position: absolute;
-  right: 0%;
-  bottom: 20px;
-  left: 0%;
-  left: 0%;
-  -index: 10;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  color: #f67d00;
-  text-align: center;
-  background-color: #040404a1;
 }
