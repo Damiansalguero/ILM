@@ -16,7 +16,7 @@ body {
 
 #landing-header p {
   color: #fff;
-  font-size: 22px;
+  font-size: 28px;
 }
 
 #btn-landing {
@@ -55,7 +55,7 @@ body {
   background-repeat: no-repeat;
   opacity: 0;
   z-index: 0;
-  animation: imageAnimation 30s linear infinite;
+  animation: imageAnimation 50s linear infinite;
 }
 
 .slideshow li:nth-child(1) {
@@ -66,19 +66,15 @@ body {
   animation-delay: 10s;
 }
 .slideshow li:nth-child(3) {
-  background-image: url("/img/software1.jpg");
+  background-image: url("/img/sec6.jpg");
   animation-delay: 20s;
 }
 .slideshow li:nth-child(4) {
-  background-image: url("/img/software2.jpg");
+  background-image: url("/img/work2.jpg");
   animation-delay: 30s;
 }
 .slideshow li:nth-child(5) {
-  background-image: url("/img/wifi1.jpg");
-  animation-delay: 40s;
-}
-.slideshow li:nth-child(6) {
-  background-image: url("/img/wifi2.jpg");
+  background-image: url("/img/work3.jpg");
   animation-delay: 40s;
 }
 
