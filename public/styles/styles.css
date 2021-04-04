@@ -6374,14 +6374,16 @@ a.close.disabled {
 
 .carousel-caption {
   position: absolute;
-  right: 15%;
+  right: 0%;
   bottom: 20px;
-  left: 15%;
-  z-index: 10;
-  padding-top: 20px;
+  left: 0%;
+  left: 0%;
+  -index: 10;
   padding-bottom: 20px;
-  color: #fff;
+  padding-top: 20px;
+  color: #f67d00;
   text-align: center;
+  background-color: #040404a1;
 }
 
 @-webkit-keyframes spinner-border {
@@ -10618,7 +10620,7 @@ header.masthead h1 {
 
 /*******PERSONAL STYLES**********/
 
-.carousel-caption-header {
+.carousel-caption {
   position: absolute;
   right: 0%;
   bottom: 20px;
