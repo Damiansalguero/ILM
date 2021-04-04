@@ -193,6 +193,50 @@
       </div>
     </div>
   </div>
+  <div id="kontaktformular">
+  <div class="wrapper animated bounceInLeft">
+    <div class="company-info">
+      <h3>ILM-IT</h3>
+      <ul>
+        <li class="contact-info"><i class="fa fa-map-marker-alt"></i> Vahrenwalder Str.269A,
+        30179 Hannover </li>
+        <li class="contact-info"><i class="fas fa-phone-alt"></i> 0511/367392-0</li>
+        <li class="contact-info"><i class="fas fa-fax"></i> 0511/367392-10</li>
+        <a id="formular-link" href="mailto:info@ilm-it.de">
+        <li><i class="fa fa-envelope"></i> info@ilm-it.de</li>
+        </a>
+      </ul>
+    </div>
+    <div class="contact">
+      <h3 id="header-contact">Schreiben Sie uns</h3>
+      <form method="POST" action="/kontakt">
+        <p>
+          <label>Name</label>
+          <input type="text" name="name">
+        </p>
+        <p>
+          <label>Betreff</label>
+          <input type="text" name="betreff">
+        </p>
+        <p>
+          <label>Emailaddresse</label>
+          <input type="email" name="email">
+        </p>
+        <p>
+          <label>Telefonnummer</label>
+          <input type="text" name="phone">
+        </p>
+        <p class="full">
+          <label>Nachricht</label>
+          <textarea name="message" rows="5"></textarea>
+        </p>
+        <p class="full btn-mina">
+          <button>Senden</button>
+        </p>
+      </form>
+    </div>
+  </div>
+  </div>
 </section>
 
 <!-- Modal -->
