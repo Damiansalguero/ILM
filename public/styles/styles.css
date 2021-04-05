@@ -251,6 +251,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+  flex-direction: column;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
