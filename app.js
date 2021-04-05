@@ -10,6 +10,7 @@ const mongoose = require("mongoose");
 const ejsMate = require("ejs-mate");
 const session = require("express-session");
 const flash = require("connect-flash");
+const ExpressError = require("./utils/ExpressError");
 const bodyParser = require("body-parser");
 const methodOverride = require("method-override");
 const passport = require("passport");
@@ -75,7 +76,7 @@ const sessionConfig = {
 app.use(session(sessionConfig));
 
 //////////////// USE  FLASH ///////////////////
-// app.use(flash());
+app.use(flash());
 
 //////////////// USE  PASSPORT ///////////////////
 app.use(passport.initialize());
