@@ -57,6 +57,15 @@ h3 {
   font-size: 14px;
   padding: 10px;
 }
+/* Upload Forms */
+.form {
+  margin-top: 10vh;
+}
+
+.form h1 {
+  text-align: center;
+}
+
 /* Kontakt-Formular */
 #kontaktformular {
   display: flex;
