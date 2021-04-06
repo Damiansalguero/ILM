@@ -59,13 +59,22 @@ h3 {
 }
 /* Upload Forms */
 .form {
-  margin-top: 10vh;
+  padding-top: 20vh;
 }
 
 .form h1 {
   text-align: center;
+  color: #fff;
 }
 
+.form label {
+  color: #fff;
+}
+
+/* Kontakt Section */
+#contact {
+  background-color: #fff;
+}
 /* Kontakt-Formular */
 #kontaktformular {
   display: flex;
@@ -250,7 +259,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #696969;
   flex-direction: column;
 }
 
