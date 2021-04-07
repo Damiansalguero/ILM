@@ -30,6 +30,7 @@ body {
   border-color: #f67d00;
   color: #000;
   background-color: #f67d00;
+  transition: ease-in 0.5s;
 }
 
 .slideshow {
