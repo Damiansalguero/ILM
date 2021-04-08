@@ -24,6 +24,7 @@ const MongoStore = require("connect-mongo")(session);
 //////////////// ROUTES IMPORT ///////////////////
 const showRoutes = require("./routes/shows");
 const portfolioRoutes = require("./routes/portfolios");
+const userRoutes = require("./routes/users");
 
 // ///////// MONGOOSE SETUP //////////////
 mongoose.connect(dbUrl, {
@@ -98,6 +99,7 @@ app.use((req, res, next) => {
 //////////////// USE  ROUTEHANDLERS ///////////////////
 app.use("/", showRoutes);
 app.use("/portfolio", portfolioRoutes);
+app.use("/admin", userRoutes);
 
 ////////////////// ERROR HANDLER /////////////////////////
 app.use((err, req, res, next) => {
