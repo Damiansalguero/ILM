@@ -9,7 +9,6 @@ module.exports.registerUser = async (req, res) => {
     const { email, username, password } = req.body;
     const user = new User({ email, username });
     const registeredUser = await User.register(user, password);
-    //login() method makes sure a user gets logged in right after register
     req.login(registeredUser, (err) => {
       if (err) return next(err);
       req.flash(
@@ -21,7 +20,8 @@ module.exports.registerUser = async (req, res) => {
     });
   } catch (err) {
     req.flash("error", err.message);
-    res.redirect("/admin/register");
+    res.send("DIDN' T WORK");
+    // res.redirect("/admin/register");
   }
 };
 
@@ -31,7 +31,7 @@ module.exports.renderLogin = (req, res) => {
 
 module.exports.loginRedirect = (req, res) => {
   req.flash("success", "Willkommen zurück !");
-  const redirectUrl = req.session.returnTo || "/";
+  const redirectUrl = req.session.returnTo || "/home";
   delete req.session.returnTo;
   res.redirect(redirectUrl);
 };
@@ -39,5 +39,5 @@ module.exports.loginRedirect = (req, res) => {
 module.exports.logout = (req, res) => {
   req.logout();
   req.flash("info", "Sie sind jetzt ausgeloggt !");
-  res.redirect("/");
+  res.redirect("/home");
 };

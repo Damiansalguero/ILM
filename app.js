@@ -21,6 +21,9 @@ const LocalStrategy = require("passport-local");
 const dbUrl = process.env.DB_URL;
 const MongoStore = require("connect-mongo")(session);
 
+//////////////// USER IMPORT ////////////////
+const User = require("./models/user");
+
 //////////////// ROUTES IMPORT ///////////////////
 const showRoutes = require("./routes/shows");
 const portfolioRoutes = require("./routes/portfolios");
@@ -83,9 +86,9 @@ app.use(flash());
 //////////////// USE  PASSPORT ///////////////////
 app.use(passport.initialize());
 app.use(passport.session());
-// passport.use(new LocalStrategy(User.authenticate()));
-// passport.serializeUser(User.serializeUser());
-// passport.deserializeUser(User.deserializeUser());
+passport.use(new LocalStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
 
 ///////////// USE MIDDLEWARE EVERYWHERE /////////////
 app.use((req, res, next) => {
@@ -98,8 +101,8 @@ app.use((req, res, next) => {
 
 //////////////// USE  ROUTEHANDLERS ///////////////////
 app.use("/", showRoutes);
-app.use("/portfolio", portfolioRoutes);
 app.use("/admin", userRoutes);
+app.use("/portfolio", portfolioRoutes);
 
 ////////////////// ERROR HANDLER /////////////////////////
 app.use((err, req, res, next) => {
