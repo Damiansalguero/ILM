@@ -1,3 +1,7 @@
-nav {
-  background-color: #000 !important;
+.navbar {
+  display: none !important;
+}
+
+#file-input-new {
+  color: #000;
 }

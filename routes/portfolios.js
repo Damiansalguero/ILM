@@ -11,9 +11,15 @@ const upload = multer({ storage });
 
 const Portfolio = require("../models/portfolio");
 
-router.get("/neu", portfolios.renderNew);
+router.get("/neu", isLoggedIn, portfolios.renderNew);
 
-router.post("/", validatePortfolio, catchAsync(portfolios.createPortfolio));
+router.post(
+  "/",
+  isLoggedIn,
+  upload.array("image"),
+  validatePortfolio,
+  catchAsync(portfolios.createPortfolio)
+);
 
 router.get("/:id", catchAsync(portfolios.showPortfolio));
 
@@ -22,6 +28,7 @@ router.get("/:id/edit", isLoggedIn, catchAsync(portfolios.renderEdit));
 router.put(
   "/:id",
   isLoggedIn,
+  upload.array("image"),
   validatePortfolio,
   catchAsync(portfolios.updatePortfolio)
 );

@@ -2,12 +2,12 @@
 
 #### Setup
 
-- NPM packages
-- Mongo + Atlas
+- ~~NPM packages~~
+- ~~Mongo + Atlas~~
 - Cloudinary
-- .env
-- Session
-- Login/Register
+- ~~.env~~
+- ~~Session~~
+- ~~Login/Register~~
 
 
 
@@ -29,6 +29,8 @@
   - dynamisch
     - Button pro Box
       - bearbeiten
+  - Bindestrich zwischen ILM und Titel
+  - Wlan Foto
 - Funktion
   - Fotoupload
     - evtl. Cloudinary "Virtuals"

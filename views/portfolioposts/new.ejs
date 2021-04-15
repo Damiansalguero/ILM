@@ -1,28 +1,30 @@
+<% layout("layouts/boilerplate") %>
+
 <link rel="stylesheet" href="/styles/portfolio.css">
 <link rel="stylesheet" href="/styles/styles.css">
-  <div class="form">
+<div class="form">
   <h1 class="">Block Hinzufügen</h1>
   <div class="col-6 offset-3">
     <form action="/portfolio" method="post" novalidate class="validated-form" enctype="multipart/form-data">
       <div class="mb-3">
         <label class="form-label" for="title">Überschrift</label>
-        <input class="form-control" type="text" id="title" name="wsg[title]" required>
+        <input class="form-control" type="text" id="title" name="port[title]" required>
       </div>
       <div class="mb-3">
-        <label class="form-label" for="title">Untertitel</label>
-        <input class="form-control" type="text" id="title" name="wsg[title]" required>
+        <label class="form-label" for="subtitle">Untertitel</label>
+        <input class="form-control" type="text" id="subtitle" name="port[subtitle]" required>
       </div>
-      <label class="form-label" for="title">Bilder</label>
+      <label class="form-label">Bilder</label>
       <div class="input-group mb-3">
-        <div class="custom-">
-          <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-          <label class="custom-file-label" for="inputGroupFile01">Datei Auswählen</label>
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="inputGroupFile02">
+          <label class="custom-file-label" id="file-input-new" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Datei Auswählen</label>
         </div>
       </div>
       <div class="mb-3">
         <button class="btn btn-primary">Speichern</button>
       </div>
     </form>
-  <a class="btn btn-primary" href="/home">Zurück</a>
+    <a class="btn btn-primary" href="/home">Zurück</a>
   </div>
 </div>
