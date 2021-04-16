@@ -162,27 +162,31 @@
           </div>
         </a>
       </div>
+      <% for(let port of ports) {%>
+      <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" data-toggle="modal" data-target="#exampleModal2">
+          <img class="img-fluid" src="<%= port.images[0].url %>" alt="" />
+          <div class="portfolio-box-caption">
+            <div class="project-category text-white-50"><%= port.title %></div>
+            <div class="project-name"><%= port.subtitle %></div>
+            <% if(currentUser) {%>
+            <button class="btn btn-primary" onclick="location.href='/portfolio/<%=port._id%>/edit'">Bearbeiten</button>
+            <% } %>
+          </div>
+        </a>
+      </div>
+      <% }%>
     </div>
   </div>
 </div>
 <!-- Call to action-->
-<section class="page-section bg-dark text-white">
-  <% for(let port of ports) {%>
-  <div class="col-lg-4 col-sm-6">
-    <a class="portfolio-box" data-toggle="modal" data-target="#exampleModal2">
-      <img class="img-fluid" src="/img/portfolio/thumbnails/portfolio2.jpg" alt="" />
-      <div class="portfolio-box-caption">
-        <div class="project-category text-white-50"><%= port.title %></div>
-        <div class="project-name"><%= port.subtitle %></div>
-      </div>
-    </a>
-  </div>
-  <% }%>
+<!-- <section class="page-section bg-dark text-white"> -->
+
     <!-- <div class="container text-center">
         <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
         <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Download Now!</a>
     </div> -->
-</section>
+<!-- </section> -->
 <!-- Contact-->
 <section class="page-section" id="contact">
   <div class="container">

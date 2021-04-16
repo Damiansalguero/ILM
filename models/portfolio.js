@@ -6,9 +6,9 @@ const ImageSchema = new Schema({
   filename: String,
 });
 
-// ImageSchema.virtual("thumbnail").get(function () {
-//   return this.url.replace("/upload", "/upload/h_300");
-// });
+ImageSchema.virtual("thumbnail").get(function () {
+  return this.url.replace("/upload", "/upload/w_150,h_150");
+});
 
 const PortfolioSchema = new Schema({
   title: String,

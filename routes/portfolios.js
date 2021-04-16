@@ -21,9 +21,7 @@ router.post(
   catchAsync(portfolios.createPortfolio)
 );
 
-router.get("/:id", catchAsync(portfolios.showPortfolio));
-
-router.get("/:id/edit", isLoggedIn, catchAsync(portfolios.renderEdit));
+router.get("/:id/edit", isLoggedIn, catchAsync(portfolios.renderEditPortfolio));
 
 router.put(
   "/:id",
@@ -32,7 +30,5 @@ router.put(
   validatePortfolio,
   catchAsync(portfolios.updatePortfolio)
 );
-
-router.delete("/:id", catchAsync(portfolios.deletePortfolio));
 
 module.exports = router;

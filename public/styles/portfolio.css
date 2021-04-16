@@ -2,6 +2,18 @@
   display: none !important;
 }
 
+.form {
+  margin-bottom: 2vh;
+}
+
 #file-input-new {
   color: #000;
+}
+
+#thumbnail-box {
+  display: flex;
+}
+
+.thumbnail {
+  margin-right: 5px;
 }
