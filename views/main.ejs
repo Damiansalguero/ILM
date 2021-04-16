@@ -108,63 +108,9 @@
 <div id="portfolio">
   <div class="container-fluid p-0">
     <div class="row no-gutters">
-      <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" href="/img/portfolio/fullsize/portfolio1.jpg">
-          <img class="img-fluid" src="/img/portfolio/thumbnails/portfolio1.jpg" alt="" />
-          <div class="portfolio-box-caption">
-            <div class="project-category text-white-50">ILM</div>
-            <div class="project-name">Informationssicherheit</div>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" data-toggle="modal" data-target="#exampleModal2">
-          <img class="img-fluid" src="/img/portfolio/thumbnails/portfolio2.jpg" alt="" />
-          <div class="portfolio-box-caption">
-            <div class="project-category text-white-50">ILM</div>
-            <div class="project-name">Datenschutz</div>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" href="/img/portfolio/fullsize/portfolio3.jpg">
-          <img class="img-fluid" src="/img/portfolio/thumbnails/portfolio3.jpg" alt="" />
-          <div class="portfolio-box-caption">
-            <div class="project-category text-white-50">ILM</div>
-            <div class="project-name">WLAN Beratung</div>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" href="/img/portfolio/fullsize/portfolio4.jpg">
-          <img class="img-fluid" src="/img/portfolio/thumbnails/portfolio4.jpg" alt="" />
-          <div class="portfolio-box-caption">
-            <div class="project-category text-white-50">Category</div>
-            <div class="project-name">Project Name</div>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" href="/img/portfolio/fullsize/portfolio5.jpg">
-          <img class="img-fluid" src="/img/portfolio/thumbnails/portfolio5.jpg" alt="" />
-          <div class="portfolio-box-caption">
-            <div class="project-category text-white-50">Category</div>
-            <div class="project-name">Project Name</div>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" href="/img/portfolio/fullsize/portfolio6.jpg">
-          <img class="img-fluid" src="/img/portfolio/thumbnails/portfolio6.jpg" alt="" />
-          <div class="portfolio-box-caption p-3">
-            <div class="project-category text-white-50">Category</div>
-            <div class="project-name">Project Name</div>
-          </div>
-        </a>
-      </div>
       <% for(let port of ports) {%>
       <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box" data-toggle="modal" data-target="#exampleModal2">
+        <div class="portfolio-box">
           <img class="img-fluid" src="<%= port.images[0].url %>" alt="" />
           <div class="portfolio-box-caption">
             <div class="project-category text-white-50"><%= port.title %></div>
@@ -173,7 +119,7 @@
             <button class="btn btn-primary" onclick="location.href='/portfolio/<%=port._id%>/edit'">Bearbeiten</button>
             <% } %>
           </div>
-        </a>
+        </div>
       </div>
       <% }%>
     </div>

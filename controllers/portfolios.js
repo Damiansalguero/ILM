@@ -14,10 +14,8 @@ module.exports.createPortfolio = async (req, res, next) => {
   }));
   // port.author = req.user._id;
   await port.save();
-  console.log(req.body, req.files);
-  res.send("POST ROUTE WORKED");
   // req.flash("success", "Der Eintrag wurde erfolgreich erstellt !");
-  // res.redirect("/home");
+  res.redirect("/home/#portfolio");
 };
 
 module.exports.renderEditPortfolio = async (req, res) => {
@@ -49,5 +47,5 @@ module.exports.updatePortfolio = async (req, res) => {
     "success",
     "Der Portfolio Eintrag wurde erfolgreich aktualisiert !"
   );
-  res.redirect("/home");
+  res.redirect("/home/#portfolio");
 };
