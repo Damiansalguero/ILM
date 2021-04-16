@@ -4170,6 +4170,9 @@ input[type="button"].btn-block {
 .custom-file-input:lang(en) ~ .custom-file-label::after {
   content: "Browse";
 }
+.custom-file-input:lang(de) ~ .custom-file-label::after {
+  content: "Durchsuchen";
+}
 .custom-file-input ~ .custom-file-label[data-browse]::after {
   content: attr(data-browse);
 }
