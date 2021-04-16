@@ -16,8 +16,8 @@ router.get("/neu", isLoggedIn, portfolios.renderNew);
 router.post(
   "/",
   isLoggedIn,
-  // upload.array("image"),
-  // validatePortfolio,
+  upload.array("image"),
+  validatePortfolio,
   catchAsync(portfolios.createPortfolio)
 );
 

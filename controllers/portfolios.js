@@ -7,14 +7,14 @@ module.exports.renderNew = (req, res) => {
 };
 
 module.exports.createPortfolio = async (req, res, next) => {
-  const portfolio = await new Portfolio(req.body.port);
-  portfolio.images = req.files.map((file) => ({
+  const port = await new Portfolio(req.body.port);
+  port.images = req.files.map((file) => ({
     url: file.path,
     filename: file.filename,
   }));
-  portfolio.author = req.user._id;
-  // await portfolio.save();
-  console.log(portfolio);
+  // port.author = req.user._id;
+  await port.save();
+  console.log(req.body, req.files);
   res.send("POST ROUTE WORKED");
   // req.flash("success", "Der Eintrag wurde erfolgreich erstellt !");
   // res.redirect("/home");

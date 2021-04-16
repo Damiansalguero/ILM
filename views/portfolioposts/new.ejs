@@ -4,7 +4,7 @@
 <div class="form">
   <h1 class="">Block Hinzufügen</h1>
   <div class="col-6 offset-3">
-    <form action="/portfolio" method="post" novalidate class="validated-form" enctype="multipart/form-data">
+    <form action="/portfolio" method="post"  enctype="multipart/form-data">
       <div class="mb-3">
         <label class="form-label" for="title">Überschrift</label>
         <input class="form-control" type="text" id="title" name="port[title]" required>
@@ -14,9 +14,13 @@
         <input class="form-control" type="text" id="subtitle" name="port[subtitle]" required>
       </div>
       <label class="form-label">Bilder</label>
+      <!-- <div class="mb-3">
+        <label for="formFile" class="form-label">Bilder</label>
+        <input class="form-control" id="image" type="file" name="image" multiple>
+      </div> -->
       <div class="input-group mb-3">
         <div class="custom-file">
-          <input type="file" class="custom-file-input" id="inputGroupFile02" lang="de">
+          <input type="file" name="image" id="image" class="custom-file-input form-control" id="inputGroupFile02" lang="de" multiple>
           <label class="custom-file-label" id="file-input-new" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Datei Auswählen</label>
         </div>
       </div>

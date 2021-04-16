@@ -40,6 +40,7 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
     <!-- <div class="row h-100 align-items-center justify-content-center text-center"> -->
     <!-- <div class="col-lg-10 align-self-end">
                 <h1 class="text-uppercase text-white font-weight-bold">Your Favorite Source of Free Bootstrap Themes</h1>
@@ -165,12 +166,23 @@
   </div>
 </div>
 <!-- Call to action-->
-<!-- <section class="page-section bg-dark text-white">
-    <div class="container text-center">
+<section class="page-section bg-dark text-white">
+  <% for(let port of ports) {%>
+  <div class="col-lg-4 col-sm-6">
+    <a class="portfolio-box" data-toggle="modal" data-target="#exampleModal2">
+      <img class="img-fluid" src="/img/portfolio/thumbnails/portfolio2.jpg" alt="" />
+      <div class="portfolio-box-caption">
+        <div class="project-category text-white-50"><%= port.title %></div>
+        <div class="project-name"><%= port.subtitle %></div>
+      </div>
+    </a>
+  </div>
+  <% }%>
+    <!-- <div class="container text-center">
         <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
         <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Download Now!</a>
-    </div>
-</section> -->
+    </div> -->
+</section>
 <!-- Contact-->
 <section class="page-section" id="contact">
   <div class="container">
