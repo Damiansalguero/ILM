@@ -17,6 +17,9 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="/styles/styles.css" rel="stylesheet" />
+        <% if(currentUser) {%>
+        <script src="//cdn.ckeditor.com/4.15.1/full-all/ckeditor.js"></script>
+        <% } %>
     </head>
     <body id="page-top" class="d-flex d-column">
       <%- include("../partials/navbar")%>

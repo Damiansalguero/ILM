@@ -21,3 +21,14 @@ module.exports.validatePortfolio = (req, res, next) => {
     next();
   }
 };
+
+//////////// INFORMATION MIDDLEWARE ///////
+module.exports.validateInformation = (req, res, next) => {
+  const { error } = infromationSchema.validate(req.body);
+  if (error) {
+    const msg = error.details.map((el) => el.message).join(",");
+    throw new ExpressError(msg, 400);
+  } else {
+    next();
+  }
+};

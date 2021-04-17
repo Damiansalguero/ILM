@@ -6,3 +6,9 @@ module.exports.portfolioSchema = Joi.object({
   }).required(),
   deleteImages: Joi.array(),
 });
+
+module.exports.infromationSchema = Joi.object({
+  information: Joi.object({
+    description: Joi.string().required(),
+  }).required(),
+});

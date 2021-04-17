@@ -1,0 +1,8 @@
+.navbar {
+  display: none !important;
+}
+
+#form-information-new,
+#form-portfolio-new {
+  padding: 5vh 0 !important;
+}
