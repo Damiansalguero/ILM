@@ -1,0 +1,12 @@
+.navbar {
+  background-color: #000 !important;
+}
+
+section {
+  padding: 5vh 0;
+}
+
+section p {
+  width: 50%;
+  margin: 0 auto;
+}

@@ -11,3 +11,7 @@ module.exports.rendermain = async (req, res) => {
   res.render("main", { ports });
   // res.render("test");
 };
+
+module.exports.renderInformation = (req, res) => {
+  res.render("information");
+};

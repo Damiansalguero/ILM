@@ -50,3 +50,5 @@
   - Je ein Template pro Nachrichtenform
     - Partials/flash.ejs
     - eigene CSS
+- Navbar
+  - links zu den Seiten

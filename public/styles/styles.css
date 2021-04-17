@@ -182,6 +182,10 @@ input {
 }
 /* Kontakt-Formular */
 
+/* SUBPAGES */
+.block-subpage {
+  padding-top: 10vh;
+}
 /*******PERSONAL STYLES**********/
 
 :root {
