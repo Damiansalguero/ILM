@@ -1,4 +1,5 @@
 const Portfolio = require("../models/portfolio");
+const Information = require("../models/information");
 const { cloudinary } = require("../cloudinary");
 
 module.exports.renderLanding = (req, res) => {
@@ -12,6 +13,7 @@ module.exports.rendermain = async (req, res) => {
   // res.render("test");
 };
 
-module.exports.renderInformation = (req, res) => {
-  res.render("information");
+module.exports.renderInformation = async (req, res) => {
+  const information = await Information.findOne({});
+  res.render("information", { information });
 };

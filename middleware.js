@@ -1,4 +1,4 @@
-const { portfolioSchema } = require("./schemas.js");
+const { portfolioSchema, infromationSchema } = require("./schemas.js");
 const ExpressError = require("./utils/ExpressError");
 
 //////////////////PASSPORT////////////////////
