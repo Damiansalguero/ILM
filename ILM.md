@@ -52,3 +52,5 @@
     - eigene CSS
 - Navbar
   - links zu den Seiten
+- ~~Portfolioboxen~~
+  - ~~work around mit currentuser~~

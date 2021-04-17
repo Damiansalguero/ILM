@@ -110,7 +110,11 @@
     <div class="row no-gutters">
       <% for(let port of ports) {%>
       <div class="col-lg-4 col-sm-6">
-        <div class="portfolio-box">
+        <% if(!currentUser) {%>
+        <div class="portfolio-box" onclick="location.href='/informationssicherheit'">
+        <% } else { %>
+          <div class="portfolio-box">
+        <% } %>
           <img class="img-fluid" src="<%= port.images[0].url %>" alt="" />
           <div class="portfolio-box-caption">
             <div class="project-category text-white-50"><%= port.title %></div>
