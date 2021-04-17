@@ -4,7 +4,7 @@
 
 - ~~NPM packages~~
 - ~~Mongo + Atlas~~
-- Cloudinary
+- ~~Cloudinary~~
 - ~~.env~~
 - ~~Session~~
 - ~~Login/Register~~
@@ -26,17 +26,17 @@
   - ~~FAW + Kreis im Hintergrund, wie beim anderen Template~~
   - ~~statisch~~
 - Portfolio Block
-  - dynamisch
-    - Button pro Box
-      - bearbeiten
-  - Bindestrich zwischen ILM und Titel
-  - Wlan Foto
+  - ~~dynamisch~~
+    - ~~Button pro Box~~
+      - ~~bearbeiten~~
+  - ~~Bindestrich zwischen ILM und Titel~~
+  - ~~Wlan Foto~~
 - Funktion
-  - Fotoupload
-    - evtl. Cloudinary "Virtuals"
-    - Models
-    - Routes
-    - Controllers
+  - ~~Fotoupload~~
+    - ~~evtl. Cloudinary "Virtuals"~~
+    - ~~Models~~
+    - ~~Routes~~
+    - ~~Controllers~~
   - Textupload
     - Models
     - Routes

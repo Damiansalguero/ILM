@@ -114,6 +114,9 @@
           <img class="img-fluid" src="<%= port.images[0].url %>" alt="" />
           <div class="portfolio-box-caption">
             <div class="project-category text-white-50"><%= port.title %></div>
+            <div class="">
+              -
+            </div>
             <div class="project-name"><%= port.subtitle %></div>
             <% if(currentUser) {%>
             <button class="btn btn-primary" onclick="location.href='/portfolio/<%=port._id%>/edit'">Bearbeiten</button>
