@@ -54,3 +54,5 @@
   - links zu den Seiten
 - ~~Portfolioboxen~~
   - ~~work around mit currentuser~~
+  - work around ggf mit readonly /url
+    - models verändern
