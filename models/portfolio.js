@@ -13,6 +13,7 @@ ImageSchema.virtual("thumbnail").get(function () {
 const PortfolioSchema = new Schema({
   title: String,
   subtitle: String,
+  url: String,
   images: [ImageSchema],
 });
 
