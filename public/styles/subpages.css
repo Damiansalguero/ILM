@@ -1,3 +1,6 @@
+body {
+  background: #000;
+}
 #mainNav {
   display: none !important;
 }
@@ -14,3 +17,30 @@ section p {
   width: 50%;
   margin: 0 auto;
 }
+
+#sub-section-two {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#sub-section-two p {
+  width: 95%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+#text-right {
+  text-align: justify;
+  margin: 2vh 0 2vh 2vw !important;
+}
+
+#text-left {
+  text-align: justify;
+  margin: 2vh 0 !important;
+}
+.port-box-border {
+  border: 2px solid #f67d00 !important;
+}
+/*  */
+
+/*  */
