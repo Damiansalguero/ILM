@@ -1,5 +1,9 @@
-.navbar {
-  background-color: #000 !important;
+#mainNav {
+  display: none !important;
+}
+
+#mainNavtwo {
+  background-color: #000;
 }
 
 section {

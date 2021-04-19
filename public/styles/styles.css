@@ -10621,19 +10621,22 @@ hr.light {
   padding: 8rem 0;
 }
 
-#mainNav {
+#mainNav,
+#mainNavtwo {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background-color: #fff;
   transition: background-color 0.2s ease;
 }
-#mainNav .navbar-brand {
+#mainNav .navbar-brand,
+#mainNavtwo .navbar-brand {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   color: #212529;
 }
-#mainNav .navbar-nav .nav-item .nav-link {
+#mainNav .navbar-nav .nav-item .nav-link,
+#mainNavtwo .navbar-nav .nav-item .nav-link {
   color: #6c757d;
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
@@ -10643,47 +10646,61 @@ hr.light {
   padding: 0.75rem 0;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover,
-#mainNav .navbar-nav .nav-item .nav-link:active {
+#mainNavtwo .navbar-nav .nav-item .nav-link:hover,
+#mainNav .navbar-nav .nav-item .nav-link:active,
+#mainNavtwo .navbar-nav .nav-item .nav-link:active {
   color: #f4623a;
 }
-#mainNav .navbar-nav .nav-item .nav-link.active {
+#mainNav .navbar-nav .nav-item .nav-link.active,
+#mainNavtwo .navbar-nav .nav-item .nav-link.active {
   color: #f4623a !important;
 }
 @media (min-width: 992px) {
-  #mainNav {
+  #mainNav,
+  #mainNavtwo {
     box-shadow: none;
     background-color: transparent;
   }
-  #mainNav .navbar-brand {
+  #mainNav .navbar-brand,
+  #mainNavtwo .navbar-brand {
     color: #f67d00;
   }
-  #mainNav .navbar-brand:hover {
+  #mainNav .navbar-brand:hover,
+  #mainNavtwo .navbar-brand:hover {
     color: #fff;
   }
-  #mainNav .navbar-nav .nav-item .nav-link {
+  #mainNav .navbar-nav .nav-item .nav-link,
+  #mainNavtwo .navbar-nav .nav-item .nav-link {
     color: rgba(255, 255, 255, 0.7);
     padding: 0 1rem;
   }
-  #mainNav .navbar-nav .nav-item .nav-link:hover {
+  #mainNav .navbar-nav .nav-item .nav-link:hover,
+  #mainNavtwo .navbar-nav .nav-item .nav-link:hover {
     color: #f67d00;
   }
-  #mainNav .navbar-nav .nav-item:last-child .nav-link {
+  #mainNav .navbar-nav .nav-item:last-child .nav-link,
+  #mainNavtwo .navbar-nav .nav-item:last-child .nav-link {
     padding-right: 0;
   }
-  #mainNav.navbar-scrolled {
+  #mainNav.navbar-scrolled,
+  #mainNavtwo.navbar-scrolled {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     background-color: #fff;
   }
-  #mainNav.navbar-scrolled .navbar-brand {
+  #mainNav.navbar-scrolled .navbar-brand,
+  #mainNavtwo.navbar-scrolled .navbar-brand {
     color: #212529;
   }
-  #mainNav.navbar-scrolled .navbar-brand:hover {
+  #mainNav.navbar-scrolled .navbar-brand:hover,
+  #mainNavtwo.navbar-scrolled .navbar-brand:hover {
     color: #f4623a;
   }
-  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
+  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link,
+  #mainNavtwo.navbar-scrolled .navbar-nav .nav-item .nav-link {
     color: #212529;
   }
-  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
+  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover,
+  #mainNavtwo.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
     color: #f4623a;
   }
 }
