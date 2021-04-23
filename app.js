@@ -119,7 +119,7 @@ app.use((err, req, res, next) => {
 
 //////////////// SERVER ROUTE ///////////////////
 // process.env.PORT ||
-const port = 8080;
+const port = process.env.PORT || 8080;
 app.listen(port, () => {
   console.log(`ILM LISTENING ON PORT ${port}`);
 });
