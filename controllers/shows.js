@@ -17,3 +17,8 @@ module.exports.renderInformation = async (req, res) => {
   const information = await Information.findOne({});
   res.render("information", { information });
 };
+
+module.exports.renderImpressum = (req, res) => {
+  res.render("impressum");
+  // res.render("test");
+};

@@ -1,0 +1,52 @@
+body {
+  background: #696969 !important;
+}
+
+#header {
+  padding-top: 20vh;
+}
+
+h3 {
+  margin: 20px 0;
+}
+
+#section-one {
+  background: #fff;
+}
+
+#section-one h3 {
+  color: #000;
+}
+
+#section-one ul,
+p {
+  color: #f67d00;
+}
+
+#section-two {
+  background: #000;
+}
+
+.headline-text-haftung {
+  font-size: 18px;
+  color: #f67d00;
+  font-weight: bold;
+  margin-top: 3vh;
+  padding-bottom: 2vh;
+}
+
+.p-haftung {
+  font-size: 14px;
+  color: #fff;
+}
+
+#section-three h3 {
+  text-align: center;
+}
+
+#section-three ul {
+  margin-left: 25%;
+  margin-right: 25%;
+  color: #fff;
+  margin-top: 1vh;
+}
