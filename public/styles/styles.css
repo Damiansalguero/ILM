@@ -57,6 +57,12 @@ h3 {
   font-size: 14px;
   padding: 10px;
 }
+/* Portfolio */
+.img-portfolio {
+  width: 100%;
+  max-height: 327px;
+}
+/* Portfolio */
 /* Upload Forms */
 .form {
   padding-top: 20vh;
