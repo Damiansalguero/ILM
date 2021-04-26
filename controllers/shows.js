@@ -14,9 +14,9 @@ module.exports.rendermain = async (req, res) => {
   // res.render("test");
 };
 
-module.exports.renderInformation = async (req, res) => {
+module.exports.renderManagedservices = async (req, res) => {
   const information = await Information.findOne({});
-  res.render("information", { information });
+  res.render("services", { information });
 };
 
 module.exports.renderImpressum = (req, res) => {
