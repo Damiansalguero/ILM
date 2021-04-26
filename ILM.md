@@ -37,13 +37,13 @@
     - ~~Models~~
     - ~~Routes~~
     - ~~Controllers~~
-  - Textupload
-    - Models
-    - Routes
-    - Controllers
-- Unterseiten
-  - views
-  - einheitliches Design
+  - ~~Textupload~~
+    - ~~Models~~
+    - ~~Routes~~
+    - ~~Controllers~~
+- ~~Unterseiten~~
+  - ~~views~~
+  - ~~einheitliches Design~~
 - Flash Messages
   - Design an ILM anpassen
   - Texte Korrekt
@@ -52,7 +52,8 @@
     - eigene CSS
 - Navbar
   - links zu den Seiten
+    - ILM Logo
 - ~~Portfolioboxen~~
   - ~~work around mit currentuser~~
-  - work around ggf mit readonly /url
-    - models verändern
+  - ~~work around ggf mit readonly /url~~
+    - ~~models verändern~~
