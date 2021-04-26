@@ -8,8 +8,8 @@ module.exports.portfolioSchema = Joi.object({
   deleteImages: Joi.array(),
 });
 
-module.exports.infromationSchema = Joi.object({
-  information: Joi.object({
+module.exports.serviceSchema = Joi.object({
+  service: Joi.object({
     description: Joi.string().required(),
   }).required(),
 });

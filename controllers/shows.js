@@ -1,5 +1,5 @@
 const Portfolio = require("../models/portfolio");
-const Information = require("../models/information");
+const Service = require("../models/service");
 const { cloudinary } = require("../cloudinary");
 const nodemailer = require("nodemailer");
 
@@ -15,8 +15,8 @@ module.exports.rendermain = async (req, res) => {
 };
 
 module.exports.renderManagedservices = async (req, res) => {
-  const information = await Information.findOne({});
-  res.render("services", { information });
+  const service = await Service.findOne({});
+  res.render("services", { service });
 };
 
 module.exports.renderImpressum = (req, res) => {

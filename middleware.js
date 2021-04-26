@@ -1,4 +1,4 @@
-const { portfolioSchema, infromationSchema } = require("./schemas.js");
+const { portfolioSchema, serviceSchema } = require("./schemas.js");
 const ExpressError = require("./utils/ExpressError");
 
 //////////////////PASSPORT////////////////////
@@ -23,8 +23,8 @@ module.exports.validatePortfolio = (req, res, next) => {
 };
 
 //////////// INFORMATION MIDDLEWARE ///////
-module.exports.validateInformation = (req, res, next) => {
-  const { error } = infromationSchema.validate(req.body);
+module.exports.validateService = (req, res, next) => {
+  const { error } = serviceSchema.validate(req.body);
   if (error) {
     const msg = error.details.map((el) => el.message).join(",");
     throw new ExpressError(msg, 400);

@@ -4,10 +4,10 @@
 <div class="form" id="form-information-new">
   <h1 class="">Text Bearbeiten</h1>
   <div class="col-6 offset-3">
-    <form action="/informationssicherheiten/<%=information._id%>?_method=PUT" method="post">
+    <form action="/managed-services/<%=service._id%>?_method=PUT" method="post">
       <div class="mb-3">
         <label class="form-label" for="description">Text</label>
-        <textarea class="form-control" type="text" id="description" name="information[description]" required><%=information.description%></textarea>
+        <textarea class="form-control" type="text" id="description" name="service[description]" required><%=service.description%></textarea>
         <script>
           CKEDITOR.replace('description');
         </script>

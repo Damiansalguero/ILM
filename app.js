@@ -27,7 +27,7 @@ const User = require("./models/user");
 //////////////// ROUTES IMPORT ///////////////////
 const showRoutes = require("./routes/shows");
 const portfolioRoutes = require("./routes/portfolios");
-const informationRoutes = require("./routes/informations");
+const serviceRoutes = require("./routes/services");
 const userRoutes = require("./routes/users");
 
 // ///////// MONGOOSE SETUP //////////////
@@ -104,7 +104,7 @@ app.use((req, res, next) => {
 app.use("/", showRoutes);
 app.use("/admin", userRoutes);
 app.use("/portfolio", portfolioRoutes);
-app.use("/informationssicherheiten", informationRoutes);
+app.use("/managed-services", serviceRoutes);
 
 ////////////////// ERROR HANDLER /////////////////////////
 app.use((err, req, res, next) => {
