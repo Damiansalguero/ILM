@@ -44,11 +44,11 @@
 - ~~Unterseiten~~
   - ~~views~~
   - ~~einheitliches Design~~
-    - Managed Services  
-    - WLAN
-    - IT-Security
-    - Infrastruktur
-    - Schulungen
+    - ~~Managed Services~~  
+    - ~~WLAN~~
+    - ~~IT-Security~~
+    - ~~Infrastruktur~~
+    - ~~Schulungen~~
     - Dienstleistungen
 - Flash Messages
   - Design an ILM anpassen
