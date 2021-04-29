@@ -2,6 +2,7 @@ const Portfolio = require("../models/portfolio");
 const Service = require("../models/service");
 const Wifi = require("../models/wifi");
 const Security = require("../models/security");
+const Structure = require("../models/structure");
 const { cloudinary } = require("../cloudinary");
 const nodemailer = require("nodemailer");
 
@@ -14,6 +15,11 @@ module.exports.rendermain = async (req, res) => {
   res.render("main", { ports });
 };
 
+module.exports.renderManagedservices = async (req, res) => {
+  const service = await Service.findOne({});
+  res.render("services", { service });
+};
+
 module.exports.renderWlan = async (req, res) => {
   const wifi = await Wifi.findOne({});
   res.render("wlan", { wifi });
@@ -23,9 +29,10 @@ module.exports.renderSecurity = async (req, res) => {
   const security = await Security.findOne({});
   res.render("security", { security });
 };
-module.exports.renderManagedservices = async (req, res) => {
-  const service = await Service.findOne({});
-  res.render("services", { service });
+
+module.exports.renderStructure = async (req, res) => {
+  const structure = await Structure.findOne({});
+  res.render("structure", { structure });
 };
 
 module.exports.renderImpressum = (req, res) => {

@@ -31,7 +31,7 @@ const serviceRoutes = require("./routes/services");
 const userRoutes = require("./routes/users");
 const wifiRoutes = require("./routes/wifis");
 const securityRoutes = require("./routes/securities");
-
+const structureRoutes = require("./routes/structures");
 // ///////// MONGOOSE SETUP //////////////
 mongoose.connect(dbUrl, {
   useNewUrlParser: true,
@@ -109,6 +109,7 @@ app.use("/portfolio", portfolioRoutes);
 app.use("/managed-services", serviceRoutes);
 app.use("/wifis", wifiRoutes);
 app.use("/securities", securityRoutes);
+app.use("/infrastruktur", structureRoutes);
 
 ////////////////// ERROR HANDLER /////////////////////////
 app.use((err, req, res, next) => {
@@ -123,7 +124,7 @@ app.use((err, req, res, next) => {
 
 //////////////// SERVER ROUTE ///////////////////
 // process.env.PORT ||
-const port = process.env.PORT;
+const port = 8080 || process.env.PORT;
 app.listen(port, () => {
   console.log(`ILM LISTENING ON PORT ${port}`);
 });

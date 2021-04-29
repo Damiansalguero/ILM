@@ -3,6 +3,7 @@ const {
   serviceSchema,
   wifiSchema,
   securitySchema,
+  structureSchema,
 } = require("./schemas.js");
 const ExpressError = require("./utils/ExpressError");
 
@@ -52,6 +53,17 @@ module.exports.validateWifi = (req, res, next) => {
 //////////// SECURITY MIDDLEWARE ///////
 module.exports.validateSecurity = (req, res, next) => {
   const { error } = securitySchema.validate(req.body);
+  if (error) {
+    const msg = error.details.map((el) => el.message).join(",");
+    throw new ExpressError(msg, 400);
+  } else {
+    next();
+  }
+};
+
+//////////// SECURITY MIDDLEWARE ///////
+module.exports.validateStructure = (req, res, next) => {
+  const { error } = structureSchema.validate(req.body);
   if (error) {
     const msg = error.details.map((el) => el.message).join(",");
     throw new ExpressError(msg, 400);
