@@ -1,5 +1,6 @@
 const Portfolio = require("../models/portfolio");
 const Service = require("../models/service");
+const Wifi = require("../models/wifi");
 const { cloudinary } = require("../cloudinary");
 const nodemailer = require("nodemailer");
 
@@ -14,6 +15,11 @@ module.exports.rendermain = async (req, res) => {
   // res.render("test");
 };
 
+module.exports.renderWlan = async (req, res) => {
+  const wifi = await Wifi.findOne({});
+  res.render("wlan", { wifi });
+  // res.render("test");
+};
 module.exports.renderManagedservices = async (req, res) => {
   const service = await Service.findOne({});
   res.render("services", { service });

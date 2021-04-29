@@ -29,6 +29,7 @@ const showRoutes = require("./routes/shows");
 const portfolioRoutes = require("./routes/portfolios");
 const serviceRoutes = require("./routes/services");
 const userRoutes = require("./routes/users");
+const wifiRoutes = require("./routes/wifis");
 
 // ///////// MONGOOSE SETUP //////////////
 mongoose.connect(dbUrl, {
@@ -105,6 +106,7 @@ app.use("/", showRoutes);
 app.use("/admin", userRoutes);
 app.use("/portfolio", portfolioRoutes);
 app.use("/managed-services", serviceRoutes);
+app.use("/wifis", wifiRoutes);
 
 ////////////////// ERROR HANDLER /////////////////////////
 app.use((err, req, res, next) => {

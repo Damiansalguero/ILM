@@ -6,7 +6,7 @@ module.exports.renderNewService = (req, res) => {
 };
 
 module.exports.createService = async (req, res, next) => {
-  const service = await new Service(req.body.Service);
+  const service = await new Service(req.body.service);
   // port.author = req.user._id;
   await service.save();
   // req.flash("success", "Der Eintrag wurde erfolgreich erstellt !");
