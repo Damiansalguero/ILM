@@ -19,3 +19,9 @@ module.exports.wifiSchema = Joi.object({
     description: Joi.string().required(),
   }).required(),
 });
+
+module.exports.securitySchema = Joi.object({
+  security: Joi.object({
+    description: Joi.string().required(),
+  }).required(),
+});

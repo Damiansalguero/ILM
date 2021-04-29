@@ -1,24 +1,27 @@
 const Portfolio = require("../models/portfolio");
 const Service = require("../models/service");
 const Wifi = require("../models/wifi");
+const Security = require("../models/security");
 const { cloudinary } = require("../cloudinary");
 const nodemailer = require("nodemailer");
 
 module.exports.renderLanding = (req, res) => {
   res.render("landing");
-  // res.render("test");
 };
 
 module.exports.rendermain = async (req, res) => {
   const ports = await Portfolio.find({});
   res.render("main", { ports });
-  // res.render("test");
 };
 
 module.exports.renderWlan = async (req, res) => {
   const wifi = await Wifi.findOne({});
   res.render("wlan", { wifi });
-  // res.render("test");
+};
+
+module.exports.renderSecurity = async (req, res) => {
+  const security = await Security.findOne({});
+  res.render("security", { security });
 };
 module.exports.renderManagedservices = async (req, res) => {
   const service = await Service.findOne({});
@@ -27,7 +30,6 @@ module.exports.renderManagedservices = async (req, res) => {
 
 module.exports.renderImpressum = (req, res) => {
   res.render("impressum");
-  // res.render("test");
 };
 
 module.exports.createKontakt = async (req, res, next) => {
