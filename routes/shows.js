@@ -11,6 +11,7 @@ router.get("/wlan", shows.renderWlan);
 router.get("/it-security", shows.renderSecurity);
 router.get("/infrastruktur", shows.renderStructure);
 router.get("/schulungen", shows.renderSeminar);
+router.get("/dienstleistungen", shows.renderLeistung);
 router.get("/impressum", shows.renderImpressum);
 
 module.exports = router;

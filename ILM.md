@@ -63,3 +63,9 @@
   - ~~work around mit currentuser~~
   - ~~work around ggf mit readonly /url~~
     - ~~models verändern~~
+
+- Karriere
+  - Formular
+    - Titel
+    - Beschreibung
+  - eigene Unterseite

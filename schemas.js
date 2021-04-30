@@ -37,3 +37,9 @@ module.exports.seminarSchema = Joi.object({
     description: Joi.string().required(),
   }).required(),
 });
+
+module.exports.leistungSchema = Joi.object({
+  leistung: Joi.object({
+    description: Joi.string().required(),
+  }).required(),
+});

@@ -33,6 +33,7 @@ const wifiRoutes = require("./routes/wifis");
 const securityRoutes = require("./routes/securities");
 const structureRoutes = require("./routes/structures");
 const seminarRoutes = require("./routes/seminars");
+const leistungRoutes = require("./routes/leistungen");
 // ///////// MONGOOSE SETUP //////////////
 mongoose.connect(dbUrl, {
   useNewUrlParser: true,
@@ -112,6 +113,7 @@ app.use("/wifis", wifiRoutes);
 app.use("/securities", securityRoutes);
 app.use("/infrastruktur", structureRoutes);
 app.use("/schulung", seminarRoutes);
+app.use("/leistungen", leistungRoutes);
 
 ////////////////// ERROR HANDLER /////////////////////////
 app.use((err, req, res, next) => {
