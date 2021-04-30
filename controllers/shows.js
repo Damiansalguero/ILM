@@ -3,6 +3,7 @@ const Service = require("../models/service");
 const Wifi = require("../models/wifi");
 const Security = require("../models/security");
 const Structure = require("../models/structure");
+const Seminar = require("../models/seminar");
 const { cloudinary } = require("../cloudinary");
 const nodemailer = require("nodemailer");
 
@@ -33,6 +34,11 @@ module.exports.renderSecurity = async (req, res) => {
 module.exports.renderStructure = async (req, res) => {
   const structure = await Structure.findOne({});
   res.render("structure", { structure });
+};
+
+module.exports.renderSeminar = async (req, res) => {
+  const seminar = await Seminar.findOne({});
+  res.render("seminars", { seminar });
 };
 
 module.exports.renderImpressum = (req, res) => {

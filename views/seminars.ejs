@@ -1,14 +1,14 @@
 <%- include("./partials/navbartwo")%>
 <% layout("layouts/boilerplate") %>
 <link rel="stylesheet" href="/styles/subpages.css">
-<link rel="stylesheet" href="/styles/structure.css">
+<link rel="stylesheet" href="/styles/seminars.css">
 <div class="block-subpage justify-content-center">
   <section class="bg-primary text-center sub-section-one">
-    <h2 class="text-white mt-0 ">INFRASTRUKTUR</h2>
+    <h2 class="text-white mt-0 ">SCHULUNGEN</h2>
     <hr class="divider light my-4" />
-    <div class="text-white-50 mb-4"><%-structure.description%></div>
+    <div class="text-white-50 mb-4"><%-seminar.description%></div>
     <% if(currentUser) {%>
-    <a href="/infrastruktur/<%=structure._id%>/edit" class="btn btn-primary">Bearbeiten</a>
+    <a href="/schulung/<%=seminar._id%>/edit" class="btn btn-primary">Bearbeiten</a>
     <% } %>
   </section>
   <section id="sub-section-two">
@@ -17,7 +17,7 @@
         <div class="row no-gutters">
           <div class="col-lg-6 col-sm-6">
             <div class="portfolio-box port-box-border">
-              <img class="img-fluid" src="/img/server5.jpg" alt="">
+              <img class="img-fluid" src="/img/schulung2.jpg" alt="">
             </div>
           </div>
           <div class="col-lg-6 col-sm-6">
@@ -48,7 +48,7 @@
           </div>
           <div class="col-lg-6 col-sm-6">
             <div class="portfolio-box port-box-border">
-              <img class="img-fluid" src="/img/server4.jpg" alt="">
+              <img class="img-fluid" src="/img/schulung4.jpg" alt="">
             </div>
           </div>
         </div>

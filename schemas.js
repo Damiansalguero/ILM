@@ -31,3 +31,9 @@ module.exports.structureSchema = Joi.object({
     description: Joi.string().required(),
   }).required(),
 });
+
+module.exports.seminarSchema = Joi.object({
+  seminar: Joi.object({
+    description: Joi.string().required(),
+  }).required(),
+});
