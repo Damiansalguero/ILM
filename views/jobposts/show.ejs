@@ -26,6 +26,9 @@
     </div>
   </section>
   <div class="btn-box">
+    <% if(currentUser) {%>
+      <a href="/karriere/jobs/<%=job._id%>/edit" class="btn  btn-primary" id="btn-back">Jobpost Bearbeiten</a>
+    <% } %>
     <a href="/karriere" class="btn btn-primary" id="btn-back">Zurück</a>
   </div>
 </div>

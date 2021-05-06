@@ -1,3 +1,7 @@
+.table {
+  width: 90%;
+  margin: 0 auto;
+}
 #job-description p {
   margin: 0;
   color: #fff;
@@ -14,10 +18,11 @@
 
 .btn-box {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  justify-content: center;
+  align-items: center;
 }
 
 #btn-back {
-  margin: 0 0 2vh 0;
+  margin: 2vh 0 2vh 0;
 }
