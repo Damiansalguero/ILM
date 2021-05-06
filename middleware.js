@@ -6,6 +6,7 @@ const {
   structureSchema,
   seminarSchema,
   leistungSchema,
+  jobSchema,
 } = require("./schemas.js");
 const ExpressError = require("./utils/ExpressError");
 
@@ -88,6 +89,17 @@ module.exports.validateSeminar = (req, res, next) => {
 //////////// LEISTUNG MIDDLEWARE ///////
 module.exports.validateLeistung = (req, res, next) => {
   const { error } = leistungSchema.validate(req.body);
+  if (error) {
+    const msg = error.details.map((el) => el.message).join(",");
+    throw new ExpressError(msg, 400);
+  } else {
+    next();
+  }
+};
+
+//////////// LEISTUNG MIDDLEWARE ///////
+module.exports.validateJob = (req, res, next) => {
+  const { error } = jobSchema.validate(req.body);
   if (error) {
     const msg = error.details.map((el) => el.message).join(",");
     throw new ExpressError(msg, 400);

@@ -49,7 +49,7 @@
     - ~~IT-Security~~
     - ~~Infrastruktur~~
     - ~~Schulungen~~
-    - Dienstleistungen
+    - ~~Dienstleistungen~~
 - Flash Messages
   - Design an ILM anpassen
   - Texte Korrekt
@@ -63,9 +63,10 @@
   - ~~work around mit currentuser~~
   - ~~work around ggf mit readonly /url~~
     - ~~models verändern~~
-
 - Karriere
   - Formular
     - Titel
     - Beschreibung
   - eigene Unterseite
+- Formulare
+  - nur mit Admin erreichbar

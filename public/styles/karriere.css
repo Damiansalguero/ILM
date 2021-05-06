@@ -1,0 +1,23 @@
+#job-description p {
+  margin: 0;
+  color: #fff;
+}
+
+#job-description {
+  margin: 0;
+  color: #fff;
+}
+
+.card-title {
+  color: #f67d00;
+}
+
+.btn-box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#btn-back {
+  margin: 0 0 2vh 0;
+}

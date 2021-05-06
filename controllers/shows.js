@@ -5,6 +5,7 @@ const Security = require("../models/security");
 const Structure = require("../models/structure");
 const Leistung = require("../models/leistung");
 const Seminar = require("../models/seminar");
+const Job = require("../models/job");
 const { cloudinary } = require("../cloudinary");
 const nodemailer = require("nodemailer");
 
@@ -49,6 +50,11 @@ module.exports.renderLeistung = async (req, res) => {
 
 module.exports.renderImpressum = (req, res) => {
   res.render("impressum");
+};
+
+module.exports.renderKarriere = async (req, res) => {
+  const jobs = await Job.find({});
+  res.render("karriere", { jobs });
 };
 
 module.exports.createKontakt = async (req, res, next) => {

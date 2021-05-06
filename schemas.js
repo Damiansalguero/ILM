@@ -43,3 +43,12 @@ module.exports.leistungSchema = Joi.object({
     description: Joi.string().required(),
   }).required(),
 });
+
+module.exports.jobSchema = Joi.object({
+  job: Joi.object({
+    title: Joi.string().required(),
+    description: Joi.string().required(),
+    date: Joi.string().optional().allow(""),
+    location: Joi.string().optional().allow(""),
+  }).required(),
+});

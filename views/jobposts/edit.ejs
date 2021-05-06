@@ -1,0 +1,33 @@
+<% layout("layouts/boilerplate") %>
+<link rel="stylesheet" href="/styles/forms.css">
+<link rel="stylesheet" href="/styles/styles.css">
+<div class="form" id="form-information-new">
+  <h1 class="">Text Bearbeiten</h1>
+  <div class="col-6 offset-3">
+    <form action="/karriere/jobs/<%=job._id%>?_method=PUT" method="post">
+      <div class="mb-3">
+        <label class="form-label" for="title">Titel</label>
+        <input class="form-control" type="text" id="title" name="job[title]" required value="<%=job.title%>">
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="description">Beschreibung</label>
+        <textarea class="form-control" type="text" id="description" name="job[description]" required><%=job.description%></textarea>
+        <script>
+          CKEDITOR.replace('description');
+        </script>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="title">Datum</label>
+        <input class="form-control" type="text" id="date" name="job[date]"  value="<%=job.date%>">
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="location">Überschrift</label>
+        <input class="form-control" type="text" id="location" name="job[location]"  value="<%=job.location%>">
+      </div>
+      <div class="mb-3">
+        <button class="btn btn-primary">Speichern</button>
+      </div>
+    </form>
+    <a class="btn btn-primary" href="/it-security">Zurück</a>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<%- include("../partials/navbartwo")%>
+<% layout("layouts/boilerplate") %>
+<link rel="stylesheet" href="/styles/subpages.css">
+<link rel="stylesheet" href="/styles/karriere.css">
+
+<div class="block-subpage justify-content-center">
+  <section class="bg-primary text-center sub-section-one">
+    <h2 class="text-white mt-0 ">Stellenangebot Details</h2>
+    <hr class="divider light my-4" />
+  </section>
+  <section id="card-section">
+    <div class="card m-auto bg-dark" style="width: 50%;">
+      <div class="card-body">
+        <h5 class="card-title">Position:
+          <br>
+          <%=job.title%></h5>
+        <div class="card-text" id="job-description">Details: <%-job.description%></div>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Ort: <%=job.location%></li>
+        <li class="list-group-item">Einstiegsdatum: <%=job.date%></li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Bewerben</a>
+      </div>
+    </div>
+  </section>
+  <div class="btn-box">
+    <a href="/karriere" class="btn btn-primary" id="btn-back">Zurück</a>
+  </div>
+</div>

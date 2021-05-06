@@ -34,6 +34,7 @@ const securityRoutes = require("./routes/securities");
 const structureRoutes = require("./routes/structures");
 const seminarRoutes = require("./routes/seminars");
 const leistungRoutes = require("./routes/leistungen");
+const jobRoutes = require("./routes/jobs");
 // ///////// MONGOOSE SETUP //////////////
 mongoose.connect(dbUrl, {
   useNewUrlParser: true,
@@ -114,6 +115,7 @@ app.use("/securities", securityRoutes);
 app.use("/infrastruktur", structureRoutes);
 app.use("/schulung", seminarRoutes);
 app.use("/leistungen", leistungRoutes);
+app.use("/karriere/jobs", jobRoutes);
 
 ////////////////// ERROR HANDLER /////////////////////////
 app.use((err, req, res, next) => {
