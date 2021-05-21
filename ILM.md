@@ -22,7 +22,7 @@
 - ~~Start Karussell~~
   - ~~Styles fixen~~
   - ~~statisch~~
-  - wir senken ihre IT Kosten hinzufügen
+  - ~~wir senken ihre IT Kosten hinzufügen~~
 - ~~Lösungen/Services~~
   - ~~FAW + Kreis im Hintergrund, wie beim anderen Template~~
   - ~~statisch~~

@@ -9,8 +9,7 @@ module.exports.createJob = async (req, res, next) => {
   const job = await new Job(req.body.job);
   await job.save();
   // req.flash("success", "Der Jobpost wurde erfolgreich erstellt !");
-  // res.redirect("/karriere");
-  res.send("WORKED!!!!");
+  res.redirect("/karriere");
 };
 
 module.exports.renderEditJob = async (req, res) => {
