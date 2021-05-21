@@ -70,5 +70,6 @@
     - ~~Beschreibung~~
   - ~~eigene Unterseite~~
   - redirect
+  - jobs löschen
 - Formulare
   - nur mit Admin erreichbar
