@@ -22,6 +22,7 @@
 - ~~Start Karussell~~
   - ~~Styles fixen~~
   - ~~statisch~~
+  - wir senken ihre IT Kosten hinzufügen
 - ~~Lösungen/Services~~
   - ~~FAW + Kreis im Hintergrund, wie beim anderen Template~~
   - ~~statisch~~
@@ -64,9 +65,10 @@
   - ~~work around ggf mit readonly /url~~
     - ~~models verändern~~
 - Karriere
-  - Formular
-    - Titel
-    - Beschreibung
-  - eigene Unterseite
+  - ~~Formular~~
+    - ~~Titel~~
+    - ~~Beschreibung~~
+  - ~~eigene Unterseite~~
+  - redirect
 - Formulare
   - nur mit Admin erreichbar
