@@ -14,6 +14,8 @@
 #### Landing
 
 - ~~Sowie von Yelp Camp~~
+- ~~IT Block ins Karusell~~
+- ~~IT Kosten Text bearbeitbar~~
 
 
 
@@ -51,6 +53,9 @@
     - ~~Infrastruktur~~
     - ~~Schulungen~~
     - ~~Dienstleistungen~~
+    - Mobile/Tablet View
+    - bearbeitbare Texte
+    - back Button
 - Flash Messages
   - Design an ILM anpassen
   - Texte Korrekt
@@ -65,11 +70,14 @@
   - ~~work around ggf mit readonly /url~~
     - ~~models verändern~~
 - Karriere
+  - Titel groß/klein schreibung
   - ~~Formular~~
     - ~~Titel~~
     - ~~Beschreibung~~
   - ~~eigene Unterseite~~
-  - redirect
-  - jobs löschen
+  - ~~redirect~~
+  - ~~jobs löschen~~
 - Formulare
   - nur mit Admin erreichbar
+- ~~Kontakt~~
+  - ~~mobile Ansicht fixen~~
