@@ -4,10 +4,11 @@ const User = require("../models/user");
 const catchAsync = require("../utils/catchAsync");
 const passport = require("passport");
 const users = require("../controllers/users");
+const { isLoggedIn } = require("../middleware");
 
-router.get("/register", users.renderRegister);
+router.get("/register", isLoggedIn, users.renderRegister);
 
-router.post("/register", catchAsync(users.registerUser));
+router.post("/register", isLoggedIn, catchAsync(users.registerUser));
 
 router.get("/login", users.renderLogin);
 
