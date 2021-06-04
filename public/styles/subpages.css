@@ -31,17 +31,22 @@ section p {
 
 #text-right {
   text-align: justify;
-  margin: 2vh 0 2vh 2vw !important;
+  margin: 4vh 0 2vh 1vw !important;
+  font-size: 14px !important;
 }
 
 #text-left {
   text-align: justify;
-  margin: 2vh 0 !important;
+  margin: 4vh 0 !important;
+  font-size: 14px !important;
 }
 .port-box-border {
   border: 2px solid #f67d00 !important;
 }
-
+.img-subpage {
+  min-height: 350px !important;
+  max-height: 350px !important;
+}
 /*  */
 
 /*  */
