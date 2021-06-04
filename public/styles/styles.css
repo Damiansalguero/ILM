@@ -4551,6 +4551,29 @@ input[type="button"].btn-block {
 }
 
 @media (max-width: 575.98px) {
+  .carousel-img-mobile {
+    min-height: 250px;
+    max-height: 250px;
+  }
+  .carousel-caption {
+    display: block;
+    bottom: 25% !important;
+    padding-top: 30px !important;
+    height: 50% !important;
+  }
+  .carousel-caption h5 {
+    font-size: 1rem !important;
+  }
+  .carousel-subtext {
+    font-size: 0.6em !important;
+    padding: 0px 5%;
+  }
+  .wrapper {
+    width: 80% !important;
+  }
+  .wrapper input {
+    font-size: 10px !important;
+  }
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid,
   .navbar-expand-sm > .container-sm,
@@ -6588,7 +6611,7 @@ a.close.disabled {
 }
 .carousel-caption h5 {
   color: #fff;
-  font-size: 1.5rem !important;
+  font-size: 1.5rem;
 }
 
 @-webkit-keyframes spinner-border {
