@@ -12,6 +12,10 @@
  */
 
 /*******PERSONAL STYLES**********/
+.carousel-subtext {
+  font-size: 0.75rem !important;
+  margin: 0 15% 15px 15% !important;
+}
 .icon-service {
   background: #000 !important;
   padding: 20px !important;
@@ -6580,6 +6584,10 @@ a.close.disabled {
   color: #f67d00;
   text-align: center;
   background-color: #040404a1;
+}
+.carousel-caption h5 {
+  color: #fff;
+  font-size: 1.5rem !important;
 }
 
 @-webkit-keyframes spinner-border {
