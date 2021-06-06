@@ -2,7 +2,8 @@
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNavtwo">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">ILM IT</a>
+      <a class="btn btn-primary" id="career" href="/home"><i class="fas fa-arrow-circle-left"></i>Zurück</a>
+      <a class="btn btn-primary" id="areas" href="/home/#portfolio"><i class="fas fa-arrow-circle-left"></i>Zurück</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto my-2 my-lg-0">
@@ -19,3 +20,15 @@
         </div>
     </div>
 </nav>
+<script type="text/javascript">
+  $(document).ready(function () {
+    // Check if the URL parameter is apples
+    if (window.location.pathname.indexOf("karriere") > -1) {
+      $("#career").css("display", "block");
+      $("#areas").css("display", "none");
+    } else {
+      $("#career").css("display", "none");
+      $("#areas").css("display", "none");
+    }
+  });
+</script>

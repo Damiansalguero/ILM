@@ -12,6 +12,9 @@
  */
 
 /*******PERSONAL STYLES**********/
+.dynamic-content {
+  display: none !important;
+}
 .carousel-subtext {
   font-size: 0.75rem !important;
   margin: 0 15% 15px 15% !important;
