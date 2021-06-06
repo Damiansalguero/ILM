@@ -59,5 +59,8 @@ section p {
   #text-left {
     margin: 2vh 0 !important;
   }
+  .navbar-toggler {
+    background-color: #f4623a;
+  }
 }
 /*  */
