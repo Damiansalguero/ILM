@@ -48,6 +48,48 @@ section p {
   max-height: 350px !important;
 }
 /*  */
+@media screen and (min-width: 0) and (max-width: 575.98px) {
+  .navbar-toggler {
+    background-color: #f4623a;
+  }
+  .sub-section-one h2 {
+    font-size: 1.5rem;
+  }
+  .sub-section-one p {
+    width: 85%;
+    text-align: justify;
+  }
+  #sub-section-two {
+    width: 85% !important;
+  }
+  #sub-section-two p {
+    width: 100%;
+  }
+  .row-mobile {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .img-subpage {
+    width: 100% !important;
+    min-height: 200px !important;
+    max-height: 200px !important;
+  }
+  #text-right {
+    margin: 4vh 0 !important;
+  }
+  .pic-1 {
+    order: 1;
+  }
+  .text-1 {
+    order: 2;
+  }
+  .text-2 {
+    order: 4;
+  }
+  .pic-2 {
+    order: 3;
+  }
+}
 
 @media screen and (min-width: 575.98px) and (max-width: 991.98px) {
   #sub-section-two {
