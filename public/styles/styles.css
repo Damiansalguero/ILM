@@ -24,6 +24,13 @@
   width: 100px !important;
 }
 
+.fa-arrow-circle-left {
+  margin-right: 10px;
+}
+.back-button {
+  display: flex;
+  justify-content: center;
+}
 #btn-service {
   background-color: transparent;
   border: 3px solid #fff;
@@ -10636,6 +10643,10 @@ hr.divider {
   max-width: 3.25rem;
   border-width: 0.2rem;
   border-color: #f67d00;
+}
+
+hr.divider-two {
+  max-width: 5.25rem;
 }
 
 hr.light {
