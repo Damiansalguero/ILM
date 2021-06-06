@@ -49,4 +49,15 @@ section p {
 }
 /*  */
 
+@media screen and (min-width: 575.98px) and (max-width: 991.98px) {
+  #sub-section-two {
+    width: 90% !important;
+  }
+  #text-right {
+    margin: 0vh 0 2vh 1vw !important;
+  }
+  #text-left {
+    margin: 2vh 0 !important;
+  }
+}
 /*  */
