@@ -2,11 +2,22 @@ body {
   background-color: #000;
 }
 
+#logo {
+  height: 120px;
+}
+
+#welcome-button {
+  margin-top: 10px;
+}
+
 #landing-header {
   z-index: 1;
   position: relative;
   text-align: center;
-  padding-top: 40vh;
+  padding-top: 15%;
+  background: #00000063;
+  padding: 20px 0;
+  margin-top: 15%;
 }
 
 #landing-header h1 {
