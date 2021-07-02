@@ -22,7 +22,7 @@
 #### Main
 
 - ~~Start Karussell~~
-- Logo/Schrift ändern
+- ~~Logo/Schrift ändern~~
   - ~~Styles fixen~~
   - ~~statisch~~
   - ~~wir senken ihre IT Kosten hinzufügen~~
