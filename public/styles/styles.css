@@ -30,6 +30,11 @@
 .fa-arrow-circle-left {
   margin-right: 10px;
 }
+
+#navbar-logo {
+  height: 20px;
+  margin-right: 10px;
+}
 .back-button {
   display: flex;
   justify-content: center;

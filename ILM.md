@@ -31,7 +31,7 @@
   - ~~statisch~~
 - Portfolio Block
   - ~~dynamisch~~
-  - Foto Höhe anpassen
+  - ~~Foto Höhe anpassen~~
     - ~~Button pro Box~~
       - ~~bearbeiten~~
   - ~~Bindestrich zwischen ILM und Titel~~
