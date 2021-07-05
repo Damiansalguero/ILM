@@ -19,7 +19,10 @@ module.exports.serviceSchema = Joi.object({
 
 module.exports.wifiSchema = Joi.object({
   wifi: Joi.object({
+    title: Joi.string().required(),
     description: Joi.string().required(),
+    textone: Joi.string().required(),
+    texttwo: Joi.string().required(),
   }).required(),
 });
 
