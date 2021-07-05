@@ -11,6 +11,8 @@ module.exports.portfolioSchema = Joi.object({
 module.exports.serviceSchema = Joi.object({
   service: Joi.object({
     description: Joi.string().required(),
+    textone: Joi.string().required(),
+    texttwo: Joi.string().required(),
   }).required(),
 });
 

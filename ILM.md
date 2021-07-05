@@ -30,6 +30,7 @@
   - ~~FAW + Kreis im Hintergrund, wie beim anderen Template~~
   - ~~statisch~~
 - Portfolio Block
+  - Titel bearbeitbar
   - ~~dynamisch~~
   - ~~Foto Höhe anpassen~~
     - ~~Button pro Box~~
@@ -69,7 +70,7 @@
     - eigene CSS
 - Navbar
   - ~~links zu den Seiten~~
-    - ILM Logo
+    - ~~ILM Logo~~
 - ~~Portfolioboxen~~
   - ~~work around mit currentuser~~
   - ~~work around ggf mit readonly /url~~

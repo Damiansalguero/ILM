@@ -6,10 +6,24 @@
   <div class="col-6 offset-3">
     <form action="/managed-services/<%=service._id%>?_method=PUT" method="post">
       <div class="mb-3">
-        <label class="form-label" for="description">Text</label>
+        <label class="form-label" for="description">Titel Unterschrift</label>
         <textarea class="form-control" type="text" id="description" name="service[description]" required><%=service.description%></textarea>
         <script>
           CKEDITOR.replace('description');
+        </script>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="textone">Text 1</label>
+        <textarea class="form-control" type="text" id="textone" name="service[textone]" required><%=service.textone%></textarea>
+        <script>
+          CKEDITOR.replace('textone');
+        </script>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="texttwo">Text 2</label>
+        <textarea class="form-control" type="text" id="texttwo" name="service[texttwo]" required><%=service.texttwo%></textarea>
+        <script>
+          CKEDITOR.replace('texttwo');
         </script>
       </div>
       <div class="mb-3">
