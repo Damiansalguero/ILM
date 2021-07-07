@@ -55,7 +55,10 @@ module.exports.seminarSchema = Joi.object({
 
 module.exports.leistungSchema = Joi.object({
   leistung: Joi.object({
+    title: Joi.string().required(),
     description: Joi.string().required(),
+    textone: Joi.string().required(),
+    texttwo: Joi.string().required(),
   }).required(),
 });
 
