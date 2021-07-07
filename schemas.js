@@ -37,7 +37,10 @@ module.exports.securitySchema = Joi.object({
 
 module.exports.structureSchema = Joi.object({
   structure: Joi.object({
+    title: Joi.string().required(),
     description: Joi.string().required(),
+    textone: Joi.string().required(),
+    texttwo: Joi.string().required(),
   }).required(),
 });
 
