@@ -4,7 +4,11 @@
 <link rel="stylesheet" href="/styles/seminars.css">
 <div class="block-subpage justify-content-center">
   <section class="bg-primary text-center sub-section-one">
+    <% if(!seminar.title) {%>
     <h2 class="text-white mt-0 ">Schulungen</h2>
+    <% } else {%>
+    <h2 class="text-white mt-0 "><%-seminar.title %></h2>
+    <% } %>
     <hr class="divider light my-4" />
     <div class="text-white-50 mb-4"><%-seminar.description%></div>
     <% if(currentUser) {%>
@@ -22,30 +26,33 @@
           </div>
           <div class="col-lg-6 col-sm-6 text-1">
             <div class="portfolio-box">
-              <div class="">
-                <p id="text-right">
-                  I'm baby chia chartreuse street art next level listicle cred master cleanse fam iPhone tbh tattooed. Heirloom venmo echo park, art party godard trust fund enamel pin authentic sartorial wayfarers gluten-free jean shorts banjo celiac
-                  hashtag. Pabst organic raw denim leggings, cold-pressed typewriter pour-over man bun chartreuse. Pork belly biodiesel skateboard godard narwhal, chartreuse palo santo typewriter umami slow-carb taxidermy irony 3 wolf moon activated
-                  charcoal vice. Lomo next level 90's, banjo try-hard squid chartreuse fixie trust fund sriracha chicharrones church-key green juice kogi retro. Vegan salvia ethical before they sold out venmo. Gentrify skateboard palo santo venmo
-                  bicycle rights, tattooed leggings vinyl schlitz taiyaki hexagon.
-                </p>
-              </div>
+              <% if(!seminar.textone) {%>
+              <p id="text-right">
+                I'm baby chia chartreuse street art next level listicle cred master cleanse fam iPhone tbh tattooed. Heirloom venmo echo park, art party godard trust fund enamel pin authentic sartorial wayfarers gluten-free jean shorts banjo celiac
+                hashtag. Pabst organic raw denim leggings, cold-pressed typewriter pour-over man bun chartreuse. Pork belly biodiesel skateboard godard narwhal, chartreuse palo santo typewriter umami slow-carb taxidermy irony 3 wolf moon activated
+                charcoal vice. Lomo next level 90's, banjo try-hard squid chartreuse fixie trust fund sriracha chicharrones church-key green juice kogi retro. Vegan salvia ethical before they sold out venmo. Gentrify skateboard palo santo venmo
+                bicycle rights, tattooed leggings vinyl schlitz taiyaki hexagon.
+              </p>
+              <% } else {%>
+                <%-seminar.textone %>
+              <% } %>
             </div>
           </div>
           <div class="col-lg-6 col-sm-6 text-2">
             <div class="portfolio-box">
-              <div class="">
-                <p id="text-left"> I'm baby chia chartreuse street art next level listicle cred master cleanse fam iPhone tbh tattooed. Heirloom venmo echo park, art party godard trust fund enamel pin authentic sartorial wayfarers gluten-free jean shorts banjo celiac
-                  hashtag. Pabst organic raw denim leggings, cold-pressed typewriter pour-over man bun chartreuse. Pork belly biodiesel skateboard godard narwhal, chartreuse palo santo typewriter umami slow-carb taxidermy irony 3 wolf moon activated
-                  charcoal vice. Lomo next level 90's, banjo try-hard squid chartreuse fixie trust fund sriracha chicharrones church-key green juice kogi retro. Vegan salvia ethical before they sold out venmo. Gentrify skateboard palo santo venmo
-                  bicycle rights, tattooed leggings vinyl schlitz taiyaki hexagon.
-                </p>
-
-              </div>
+              <% if(!seminar.texttwo) {%>
+              <p id="text-left"> I'm baby chia chartreuse street art next level listicle cred master cleanse fam iPhone tbh tattooed. Heirloom venmo echo park, art party godard trust fund enamel pin authentic sartorial wayfarers gluten-free jean shorts banjo celiac
+                hashtag. Pabst organic raw denim leggings, cold-pressed typewriter pour-over man bun chartreuse. Pork belly biodiesel skateboard godard narwhal, chartreuse palo santo typewriter umami slow-carb taxidermy irony 3 wolf moon activated
+                charcoal vice. Lomo next level 90's, banjo try-hard squid chartreuse fixie trust fund sriracha chicharrones church-key green juice kogi retro. Vegan salvia ethical before they sold out venmo. Gentrify skateboard palo santo venmo
+                bicycle rights, tattooed leggings vinyl schlitz taiyaki hexagon.
+              </p>
+              <% } else {%>
+                <%-seminar.texttwo %>
+              <% } %>
             </div>
           </div>
           <div class="col-lg-6 col-sm-6 pic-2">
-            <div class="portfolio-box port-box-borde">
+            <div class="portfolio-box port-box-border">
               <img class="img-fluid img-subpage" src="/img/schulung4.jpg" alt="">
             </div>
           </div>

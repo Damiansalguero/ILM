@@ -46,7 +46,10 @@ module.exports.structureSchema = Joi.object({
 
 module.exports.seminarSchema = Joi.object({
   seminar: Joi.object({
+    title: Joi.string().required(),
     description: Joi.string().required(),
+    textone: Joi.string().required(),
+    texttwo: Joi.string().required(),
   }).required(),
 });
 
